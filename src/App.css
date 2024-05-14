@@ -1,0 +1,51 @@
+body {
+  overflow-x: hidden;
+}
+
+.blocks__wrapper {
+  display: flex;
+  row-gap: 5px;
+  column-gap: 5px;
+  position: relative;
+}
+
+.blocks {
+  position: relative;
+}
+
+.blocks:before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background-color: gold;
+  position: absolute;
+  left: 50%;
+  z-index: 9;
+}
+
+.block {
+  background-color: #ff69b4;
+  perspective: 400px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 20px;
+  color: gold;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.winner {
+  text-align: center;
+  font-size: 22px;
+}
